@@ -1,12 +1,19 @@
-<p>user-management works!</p>
 <div>
-  <input type="text" [(ngModel)]="newUser" placeholder="add new user">
-  <button (click)="addUser()">Add new user</button>
-</div>
-<ul>
-    <li *ngFor="let user of users;  let i= index">
-        {{user}}
-        <button (click)="deleteUser(i)">Delete user</button>
+    <input type="text" [(ngModel)]="selectedUser" name="selectedUser" placeholder="add new user">
+    <button (click)="addUser()">Add new user</button>
+  </div>
+  
+  <ul>
+    <li *ngFor="let user of users; let i = index">
+      {{ user }}
+      <button (click)="editUser(i)">Edit user</button>
+      <button (click)="deleteUser(i)">Delete user</button>
     </li>
-   
-</ul>
+  </ul>
+  
+  <form *ngIf="selectedUserIndex !== -1">
+    <h3>Edit user</h3>
+    <input type="text" [(ngModel)]="selectedUser">
+    <button (click)="updateUser()">Update</button>
+    <button (click)="cancelEdit()">Cancel edit</button>
+  </form>

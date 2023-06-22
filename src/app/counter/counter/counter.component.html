@@ -1,0 +1,13 @@
+<p>counter works!</p>
+<div>
+    <h2>Counter</h2>
+    <p>Latest Value: {{ counterValue[counterValue.length - 1] }}</p>
+    <button (click)="increment()">Increment</button>
+    <button (click)="decrement()">Decrement</button>
+</div>
+
+<div *ngFor="let value of counterValue; let i = index" class="box">
+    <p>{{ value }}</p>
+  </div>
+
+  
