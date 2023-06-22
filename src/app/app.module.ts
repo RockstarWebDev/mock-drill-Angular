@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { UserManagementComponent } from './User Management Component/user-management/user-management.component';
 import { CounterComponent } from './counter/counter/counter.component';
+import { TaskListComponent } from './Persisting Data Localstorage/task-list/task-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserManagementComponent,
-    CounterComponent
+    CounterComponent,
+    TaskListComponent
   ],
   imports: [
     BrowserModule,
