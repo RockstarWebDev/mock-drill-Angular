@@ -1,0 +1,14 @@
+<p>char-counter works!</p>
+
+<input type="text" [(ngModel)]="inputString" placeholder="Enter a string">
+<button (click)="countChars()">Count</button>
+
+<div *ngIf="inputString">
+  <h3>Character Counts:</h3>
+  <ul>
+    <li *ngFor="let char of charCountResult | keyvalue">{{ char.key }} - {{ char.value }}</li>
+  </ul>
+
+  <h3>Most Appearing Character:</h3>
+  <p>{{ mostAppearingChar }} - {{ count }}</p>
+</div>
