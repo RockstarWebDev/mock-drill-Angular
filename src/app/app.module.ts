@@ -6,12 +6,18 @@ import { UserManagementComponent } from './User Management Component/user-manage
 import { CounterComponent } from './counter/counter/counter.component';
 import { TaskListComponent } from './Persisting Data Localstorage/task-list/task-list.component';
 
+import { DestinationComponent } from './parent-child/destination/destination.component';
+import { SourceComponent } from './parent-child/source/source.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     UserManagementComponent,
     CounterComponent,
-    TaskListComponent
+    TaskListComponent,
+    DestinationComponent,
+    SourceComponent
   ],
   imports: [
     BrowserModule,
