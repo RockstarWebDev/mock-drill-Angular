@@ -27,6 +27,6 @@ export class PalindromeComponent {
         this.inputArray.push(element);
       }
     }
-return this.inputArray;
+      return this.inputArray;
   }
 }
