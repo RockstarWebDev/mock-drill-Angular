@@ -9,6 +9,7 @@ import { TaskListComponent } from './Persisting Data Localstorage/task-list/task
 import { DestinationComponent } from './parent-child/destination/destination.component';
 import { SourceComponent } from './parent-child/source/source.component';
 import { CharCounterComponent } from './char counter/char-counter/char-counter.component';
+import { PalindromeComponent } from './palindrome/palindrome.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CharCounterComponent } from './char counter/char-counter/char-counter.c
     TaskListComponent,
     DestinationComponent,
     SourceComponent,
-    CharCounterComponent
+    CharCounterComponent,
+    PalindromeComponent
   ],
   imports: [
     BrowserModule,

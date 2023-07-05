@@ -1,0 +1,17 @@
+<p>palindrome works!</p>
+<div class="add-todo">
+    <form (ngSubmit)="addTodo()">
+        <input type="text" name="todoInput" [(ngModel)]="newTodoTitle" placeholder="Enter a new todo" />
+        <button type="submit">Add Todo</button>
+      </form> 
+  </div>
+  
+  <ul>
+    <li *ngFor="let todo of todos">{{ todo }}</li>
+  </ul>
+
+  <ul>
+    <button type="button" (click)="findPalindromes()">Detect palindrome</button>
+    <li *ngFor="let char of inputArray">{{ char }}</li>
+  </ul>
+  
