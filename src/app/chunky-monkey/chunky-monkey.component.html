@@ -1,0 +1,23 @@
+<p>chunky-monkey works!</p>
+<div class="add-todo">
+    <form (ngSubmit)="addElement()">
+      <input type="text" name="aryElemets" [(ngModel)]="aryElemets" placeholder="Enter a new element" />
+      <button type="submit">Add element</button>
+    </form>
+  </div>
+  
+  <div>
+    <input type="text" name="chunkSizeInput" [(ngModel)]="size" placeholder="Enter a chunk size" />
+    <button type="button" (click)="onChunk()">Return chunks</button>
+  </div>
+  
+  <div>
+    <p>Input: [{{ monkey.join(', ') }}]</p>
+    <p>Output:</p>
+    <ul>
+      <li *ngFor="let chunk of chunks">
+        <pre>[[{{ chunk.join(', ') }}]]</pre>
+      </li>
+    </ul>
+  </div>
+  

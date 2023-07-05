@@ -10,6 +10,7 @@ import { DestinationComponent } from './parent-child/destination/destination.com
 import { SourceComponent } from './parent-child/source/source.component';
 import { CharCounterComponent } from './char counter/char-counter/char-counter.component';
 import { PalindromeComponent } from './palindrome/palindrome.component';
+import { ChunkyMonkeyComponent } from './chunky-monkey/chunky-monkey.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PalindromeComponent } from './palindrome/palindrome.component';
     DestinationComponent,
     SourceComponent,
     CharCounterComponent,
-    PalindromeComponent
+    PalindromeComponent,
+    ChunkyMonkeyComponent
   ],
   imports: [
     BrowserModule,
