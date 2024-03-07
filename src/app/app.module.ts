@@ -11,7 +11,8 @@ import { SourceComponent } from './parent-child/source/source.component';
 import { CharCounterComponent } from './char counter/char-counter/char-counter.component';
 import { PalindromeComponent } from './palindrome/palindrome.component';
 import { ChunkyMonkeyComponent } from './chunky-monkey/chunky-monkey.component';
-
+import { ParentComponent } from './lifecycleHooks/ngOnChanges/parent/parent.component';
+import { ChildComponent } from './lifecycleHooks/ngOnChanges/child/child.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,12 @@ import { ChunkyMonkeyComponent } from './chunky-monkey/chunky-monkey.component';
     SourceComponent,
     CharCounterComponent,
     PalindromeComponent,
-    ChunkyMonkeyComponent
+    ChunkyMonkeyComponent,
+    ChildComponent,
+    ParentComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
