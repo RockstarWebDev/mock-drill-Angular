@@ -15,6 +15,7 @@ import { ProjectedContentComponent } from './ngAfterContentInit/projected-conten
 import { CardComponent } from './ngAfterContentInit/card/card.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { CardComponent } from './ngAfterContentInit/card/card.component';
     BrowserModule,
     FormsModule
   ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
