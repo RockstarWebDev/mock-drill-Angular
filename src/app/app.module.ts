@@ -11,6 +11,8 @@ import { SourceComponent } from './parent-child/source/source.component';
 import { CharCounterComponent } from './char counter/char-counter/char-counter.component';
 import { PalindromeComponent } from './palindrome/palindrome.component';
 import { ChunkyMonkeyComponent } from './chunky-monkey/chunky-monkey.component';
+import { ProjectedContentComponent } from './ngAfterContentInit/projected-content/projected-content.component';
+import { CardComponent } from './ngAfterContentInit/card/card.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ChunkyMonkeyComponent } from './chunky-monkey/chunky-monkey.component';
     SourceComponent,
     CharCounterComponent,
     PalindromeComponent,
-    ChunkyMonkeyComponent
+    ChunkyMonkeyComponent,
+    ProjectedContentComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
